@@ -1,3 +1,4 @@
+
 body {
 	margin: 0;
 	padding: 0;
@@ -378,7 +379,7 @@ p {
 }
 #content{
 	width: 86%;
-	min-height: 500px;
+	min-height: 1000px;
 	float: left;
 	overflow-y: hidden;
 	
@@ -517,4 +518,92 @@ h1 img{
 
 .list-div th a,.list-div th a:hover,.list-div th a:link{
   color: #111;
+}
+#page-table{
+	width: 100%;
+}
+#turn-page{
+	text-align: right;
+}
+#page-like{
+	border-left: 1px solid #999;
+}
+#footer{
+	background: #f3f3f3;
+	border: 1px solid #ddd;
+	padding: 15px;
+	color: #9cacaf;
+	margin: 10px 0;
+	text-align: center;
+}
+
+
+.tab-div{
+	background: #f3f3f3;
+	border: 1px solid #d7d7d7;
+	margin: 0 0 10px 0;
+	padding: 1px;
+}
+#tabbars-div{
+	background: #efefef;
+	padding-left: 10px;
+	height: 39px;
+}
+#tabbars-div p{
+	margin: 2px 0 0 0;
+}
+.tab-fronts{
+	background: #fefefe;
+	height: 39px;
+	line-height: 39px;
+	display: block;
+	float: left;
+	padding: 0 20px;
+	text-align: center;
+	font-weight: bold;
+	cursor: pointer;
+}
+.tab-back{
+	padding: 0 20px;
+	text-align: center;
+	font-size: 13px;
+	display: block;
+	float: left;
+	color: #787878;
+	line-height: 39px;
+	cursor: pointer;
+}
+td.label{
+	text-align: right;
+	vertical-align: top;
+	font-weight: bold;
+	padding: 5px 1em;
+	width: 30%;
+	line-height: 30px;
+}
+.goods_name{
+	margin: 5px 0;
+}
+span.require-field{
+	margin-left: 1em;
+	font: 12px verdana;
+	color: #ff0000;
+}
+.goods_info input[type='text']{
+	margin: 5px 0;
+}
+a.special:link{
+	margin: 0 5px;
+	padding: 1px 5px;
+	border: 1px solid #91C4D0;
+	border-right: 2px solid #278296;
+	border-bottom: 2px solid #278296;
+	background: #ddeef2;
+	text-decoration: none;
+	font-weight: 400;
+}
+span.require-field{
+	margin-left: 1em;
+	font: 12px verdana;
+	color: #FF0000;
 }

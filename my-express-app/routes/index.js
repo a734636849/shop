@@ -15,6 +15,9 @@ router.get('/shoplist', function(req, res) {
 router.get('/list', function(req, res) {
 	res.render('list', { title: '商品列表'})
 })
+router.get('/newshop', function(req, res) {
+	res.render('newshop', { title: '添加新商品'})
+})
 router.post('/api/login4ajax', function(req, res, next){
     var username = req.body.username;
     var psw = req.body.psw;
