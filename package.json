@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "webpack": "^3.10.0"
+  },
+  "name": "shop",
+  "version": "0.0.1",
+  "description": "test project",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lls",
+  "license": "ISC"
+}

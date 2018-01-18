@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/iconfont/iconfont.css">
+  <script type="text/javascript" src="/javascripts/jquery.js"></script>
+</head>
+<body style="height: 100%;padding: 0">
+  <form class="login-body" method="post" name="theForm">
+    <div class="login-hd">
+      <img src="images/shopex.png" alt="shopex" class="logo">
+    </div>
+    <div class="center-wrap" id="centerWrap">
+      <div class="login-center">
+        <div class="bd-logo">
+          <img src="images/ecshop-logo.png" width="373" height="103" border="0" alt="ECSHOP">
+        </div>
+      </div>
+      <div class="message"></div>
+      <div class="z-bd">
+        <div class="login-panel" id="loginPanel">
+          <h3 class="panel-hd cl-link-blue"></h3>
+          <div class="controls first">
+            <div class="controls_t">
+              <i class="iconfont">&#xe61d;</i>
+              <input type="text" name="username" placeholder="用户名" id="username">
+            </div>
+            <div class="controls_t">
+              <i class="iconfont">&#xe6a0;</i>
+              <input type="text" name="username" placeholder="密码" id="psw">
+            </div>
+            <div class="controls_t">
+              <i class="iconfont">&#xe874;</i>
+              <input type="text" name="username" placeholder="验证码">
+              <img src="images/index.png" alt="" class="IMG">
+            </div>
+            <button id="btn" onclick="login()">登录</button>
+          </div>
+          <input type="checkbox" name="remember" id="remember" value="1">
+          <label for="remember" id="lbl">保存登录信息</label>
+          <a href="" class="forget">忘记密码</a>
+          <a href="" class="home">去店铺首页>></a>
+        </div>
+      </div>
+    </div>
+  </form>
+</body>
+</html>
+<script>
+
+  function login(){
+    $.ajax({
+      url: "/api/login4ajax",
+      type: "post",
+      data: {
+        username: $('#username').val(),
+        psw: $('#psw').val()
+      },
+        success: function(res){
+        //console.log(res);
+        if (res.code == 1) {
+          localhost.href("/shoplist")
+        } else {
+          alert("失败");
+        }
+      }
+    })
+  }
+</script>
