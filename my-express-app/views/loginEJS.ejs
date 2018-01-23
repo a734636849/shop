@@ -36,7 +36,7 @@
               <input type="text" name="username" placeholder="验证码">
               <img src="images/index.png" alt="" class="IMG">
             </div>
-            <button id="btn" onclick="login()">登录</button>
+            <a href="shoplist" id="btn">登录</a>
           </div>
           <input type="checkbox" name="remember" id="remember" value="1">
           <label for="remember" id="lbl">保存登录信息</label>
@@ -49,9 +49,9 @@
 </body>
 </html>
 <script>
-
-  function login(){
-    $.ajax({
+function login(){
+ $("#btn").click(function(){
+ 	$.ajax({
       url: "/api/login4ajax",
       type: "post",
       data: {
@@ -61,11 +61,14 @@
         success: function(res){
         //console.log(res);
         if (res.code == 1) {
-          localhost.href("/shoplist")
+          localhost.href = "/shoplist";
         } else {
-          alert("失败");
+          alert(res.message);
         }
       }
     })
   }
+ })
+  
+    
 </script>

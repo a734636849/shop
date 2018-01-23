@@ -3,6 +3,7 @@ body {
 	margin: 0;
 	padding: 0;
 	color: #192E32;
+	overflow-y: hidden;
 }
 
 ul,
@@ -136,7 +137,7 @@ p {
 }
 
 #menu-div ul li a:hover {
-	background: #1887bb
+	background: #1887bb;
 }
 
 #menu-div ul li a span {
@@ -277,8 +278,6 @@ p {
 	text-align: center;
 }
 
-#main-div {}
-
 #menu-list {
 	padding: 0;
 	margin: 0;
@@ -300,7 +299,6 @@ p {
 	background-color: #454545;
 }
 
-#menu-list li.collapse ul {}
 
 #menu-list li span {
 	font-size: 14px;
@@ -379,16 +377,12 @@ p {
 }
 #content{
 	width: 86%;
-	min-height: 1000px;
+	min-height: 700px;
 	float: left;
 	overflow-y: hidden;
 	
 }
 /*商品列表*/
-#list{
-	background: url(/images/body_bj.jpg);
-	min-width: 773px;
-}
 
 h1{
 	border-bottom: 1px solid #ccc;
@@ -442,9 +436,7 @@ h1 img{
 .form-div select, .form-div input, .form-div img {
   vertical-align: middle;
 }
-/*.form-div option{
-	font-size: 12px !important; 
-}*/
+
 .button{
 	padding: 5px 15px 5px;
 	margin: 2px 2px;
@@ -606,4 +598,16 @@ span.require-field{
 	margin-left: 1em;
 	font: 12px verdana;
 	color: #FF0000;
+}
+.button-div{
+	text-align: center;
+	padding: 3px 0;
+}
+input.button{
+	padding: 5px 15px 5px;
+	border: none;
+	background: #ff3f3f;
+	color: fff;
+	cursor: pointer;
+	border-radius: 3px;
 }
